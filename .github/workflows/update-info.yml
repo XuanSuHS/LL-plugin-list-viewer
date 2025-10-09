@@ -43,3 +43,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .workflow-script/output # 上传的目录
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
+          full_commit_message: "🚀 自动部署：${{ github.sha }}"
